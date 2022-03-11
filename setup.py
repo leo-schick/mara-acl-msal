@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 def get_long_description():
     with open('README.md') as f:
         return re.sub('!\[(.*?)\]\(docs/(.*?)\)',
-                      r'![\1](https://github.com/mara/mara-db/raw/master/docs/\2)', f.read())
+                      r'![\1](https://github.com/leo-schick/mara-acl-msal/raw/master/docs/\2)', f.read())
 
 setup(
     name='mara-acl-msal',
