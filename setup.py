@@ -23,7 +23,7 @@ setup(
 
     install_requires=[
         'mara-page>=1.4.0',
-        'mara-acl>=2.0.0',
+        'mara-acl>=2.1.0',
         'msal>=1.17.0'
     ],
 
