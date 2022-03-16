@@ -16,7 +16,9 @@ patch(mara_acl_msal.config.client_id)(lambda: '<application-id>')
 patch(mara_acl_msal.config.client_secret)(lambda: '<client-secret>')
 patch(mara_acl_msal.config.authority)(lambda: 'https://login.microsoftonline.com/<tenant-id>')
 ```
-4. Change the MaraApp so that it supports flask sessions. This could be done by using the pip package `Flask-Session`:
+4. Change the flask MaraApp so that it supports flask sessions.<br/>
+This could be done by using the pip package `Flask-Session`, see below.<br/>
+In case you decided to use `SESSION_TYPE='filesystem'` (see [here](https://flask-session.readthedocs.io/en/latest/#configuration)), you should add `/flask_session` to your .gitignore file.
 ``` python
 from datetime import timedelta
 from flask_session import Session
