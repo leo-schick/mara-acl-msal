@@ -23,7 +23,7 @@ def __():
     email = flask.session["user"]["preferred_username"]
     if not email:
         flask.abort(400, f'Could not get user email from session object.')
-    
+
     return email
 
 
