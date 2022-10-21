@@ -22,6 +22,7 @@ In case you decided to use `SESSION_TYPE='filesystem'` (see [here](https://flask
 ``` python
 from datetime import timedelta
 from flask_session import Session
+import mara_acl_msal.views
 from mara_app.app import MaraApp
 
 app = MaraApp()
@@ -35,3 +36,4 @@ app.config['SESSION_FILE_THRESHOLD'] = 100
 
 Session(app)
 ```
+5. make sure to run `import mara_acl_msal.views` before importing/initalizing the MaraApp
