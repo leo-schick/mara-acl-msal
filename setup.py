@@ -10,7 +10,7 @@ def get_long_description():
 
 setup(
     name='mara-acl-msal',
-    version='1.0.0',
+    version='1.0.1',
 
     description='ACL implementation for Mara via Microsoft Authentication Library',
 
